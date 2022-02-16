@@ -11,10 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/xiaomi/umi/device.mk)
 
-# Inherit from the CrystalOS configuration.
-$(call inherit-product, vendor/crystal/config/common.mk)
+# Inherit from the OctaviOS configuration.
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
-PRODUCT_NAME := crystal_umi
+# Gapps Stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+WITH_GAPPS := true
+
+PRODUCT_NAME := octavi_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 10

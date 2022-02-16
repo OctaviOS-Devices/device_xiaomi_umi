@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/crystal_umi.mk
+    $(LOCAL_DIR)/octavi_umi.mk
 
 COMMON_LUNCH_CHOICES := \
-    crystal_umi-eng \
-    crystal_umi-user \
-    crystal_umi-userdebug
+    octavi_umi-eng \
+    octavi_umi-user \
+    octavi_umi-userdebug
